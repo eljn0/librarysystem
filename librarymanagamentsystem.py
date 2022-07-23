@@ -18,7 +18,7 @@ class Library:
     def borrowBook(self, name, bookname):
         if bookname not in self.books:
             print(
-                f"{bookname} BOOK IS NOT AVAILABLE EITHER TAKEN BY SOMEONE ELSE, WAIT UNTIL HE RETURNED.\n")
+                f"{bookname} SORRY BOOK IS NOT AVALIABLE NOW. COME BACK SOON.\n")
         else:
             track.append({name: bookname})
             print("BOOK ISSUED : THANK YOU KEEP IT WITH CARE AND RETURN ON TIME.\n")
@@ -56,11 +56,11 @@ class Student():
 if __name__ == "__main__":
 
     Delhilibrary = Library(
-        ["vistas", "invention", "rich&poor", "indian", "macroeconomics", "microeconomics"])
+        ["vistas", "invention", "rich&poor", "indian", "macroeconomics", "poor dad", "ENVER", "Life of poor child", "Zero to hero: Be a front end programmer. ", "microeconomics"])
     student = Student()
     track = []
 
-    print("\t\t\t\t\t\t\t♦♦♦♦♦♦♦ WELCOME TO THE ELJAN'S LIBRARY ♦♦♦♦♦♦♦\n")
+    print("\t\t\t\t\t\t\t♦♦♦♦♦♦♦ WELCOME TO THE ELJAN'S PRIVATE LIBRARY ♦♦♦♦♦♦♦\n")
     print("""CHOOSE WHAT YOU WANT TO DO:-\n1. Listing all books\n2. Borrow books\n3. Return books\n4. Donate books\n5. Track books\n6. exit the library\n""")
 
     while (True):
