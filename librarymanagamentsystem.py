@@ -72,7 +72,7 @@ if __name__ == "__main__":
                 Delhilibrary.displayAvailableBooks()
             elif usr_response == 2:  # borrow
                 Delhilibrary.borrowBook(
-                    input("Enter your name: "), student.requestBook())
+                    input("What is your name? : "), student.requestBook())
             elif usr_response == 3:  # return
                 Delhilibrary.returnBook(student.returnBook())
             elif usr_response == 4:  # donate
